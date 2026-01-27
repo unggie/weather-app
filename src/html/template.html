@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Weather App</title>
+</head>
+<body class="center-items">
+    <header></header>
+    <main>
+        <form action="#" class="form center-items">
+            <input type="text" class="location-input" placeholder="Type city..." required>
+            <input type="button" class="search" value="search">
+        </form>
+        <div class="main-info">
+            <div class="temp-icon center-items">
+                <span class="temp-font" id="temp">
+                    24 
+                    <span>
+                        <sup class="degrees">o</sup> 
+                        <span class="temp-system">
+                            C
+                        </span>
+                    </span>
+                </span>
+                <span class="temp-font" id="icon">
+                    ☀️
+                </span>
+            </div>
+            <div class="city-name center-items">
+                <span class="city" id="city">
+                    Ndola
+                </span>
+            </div>
+            <div class="description center-items">
+                <span class="description-font" id="description">
+                    Super sunny
+                </span>
+            </div>
+            <div class="additional-info">
+                <div class="humidity stats-card">
+                    <span class="icon additional-info-font">💧</span>
+                    <span class="value additional-info-font" id="humidity">55%</span>
+                    <span class="title additional-info-font">Humidity</span>
+                </div>
+                <div class="precipitation stats-card">
+                    <span class="icon additional-info-font">🌧️</span>
+                    <span class="value additional-info-font" id="precipitation">67%</span>
+                    <span class="title additional-info-font">Precipitation</span>
+                </div>
+                <div class="wind-speed stats-card">
+                    <span class="icon speed-icon additional-info-font">💨</span>
+                    <span class="value wind-value additional-info-font" id="humidity">6 mph</span>
+                    <span class="title additional-info-font">Wind speed</span>
+                </div>
+            </div>
+            <div class="date-time">
+                <span class="date-font" id="date">
+                    Monday,
+                </span>
+                <span class="date-font" id="time">
+                    15:30
+                </span>
+            </div>
+        </div>
+        
+        <div class="toggle-button">
+            <label for="toggle" class="toggle-background">
+                <span class="switch-label switch-label-f">
+                    F
+                </span>
+                <input type="checkbox" name="toggle" id="toggle" class="toggle-input">
+                <div class="toggle-switch"></div>
+                <span class="switch-label switch-label-c">
+                    C
+                </span>
+            </label>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
