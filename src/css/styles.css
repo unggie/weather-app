@@ -30,7 +30,8 @@ main{
     flex-direction: column;
 
     padding: 20px;
-    height: 490px;
+    min-height: 490px;
+    max-width: auto;
     width: 350px;
 
     background: rgba(20, 40, 40, 0.6);
@@ -129,9 +130,10 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'humidity precipitation'
-    'wind-speed wind-speed'
+    'wind-speed snow-level'
     ;
-    gap: 10px;
+    row-gap: 15px;
+    column-gap: 20px;
 }
 
 .stats-card{
@@ -142,10 +144,10 @@ main{
     'icon-image percentage'
     'title title'
     ;
-    padding: 10px;
+    padding: 15px 20px;
     background: rgba(20, 40, 40, 0.6);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.37);
     border-radius: 10px;  
 }
 .stats-card:hover{
@@ -153,15 +155,6 @@ main{
 }
 .icon{
     grid-area: icon-image;
-}
-span.speed-icon{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-}
-span.wind-value{
-    display: flex;
-    justify-content: flex-start;
 }
 .value{
     grid-area: percentage;
@@ -183,6 +176,9 @@ span.wind-value{
 }
 .wind-speed{
     grid-area: wind-speed;
+}
+.snow {
+    grid-area: snow-level;
 }
 /* toggle button styles */
 
@@ -217,10 +213,10 @@ span.wind-value{
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.switch-label-f {
+.switch-label-c {
     left: 25%;
 }
-.switch-label-c {
+.switch-label-f {
     left: 75%;
 }
 .toggle-switch{
