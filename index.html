@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <title>Weather App</title>
+<script defer src="main.js"></script></head>
+<body class="center-items">
+    <header></header>
+    <main>
+        <form action="#" class="form center-items" id="form">
+            <input type="text" class="location-input" id="location-input" placeholder="Type city..." required>
+            <input type="submit" class="search" value="search">
+        </form>
+        <div class="loading-screen" id="loading-screen">
+            <div class="loading-circle center-items" id="loading-circle">
+                <img class="loading-circle-img" alt="loadingImage">
+            </div>
+            <div class="error" id="error">
+                 Error: 404
+             </div> 
+        </div>
+        <div class="main-info" id="main-info">
+            <div class="temp-icon center-items">
+                <span class="text-fade">
+                    <span class="temp-font main-temp" id="temp">
+                        24
+                    </span> 
+                    <span>
+                        <sup class="degrees">o</sup> 
+                        <span class="temp-system" id="temp-system">
+                            C
+                        </span>
+                    </span>
+                </span>
+                <span class="temp-font text-fade main-icon" id="icon">
+                    ☀️
+                </span>
+            </div>
+            <div class="city-name center-items">
+                <span class="city text-fade" id="city">
+                    Ndola
+                </span>
+            </div>
+            <div class="description center-items">
+                <span class="description-font text-fade" id="description">
+                    Super sunny
+                </span>
+            </div>
+            <div class="additional-info">
+                <div class="humidity stats-card">
+                    <span class="icon additional-info-font text-fade">💧</span>
+                    <span class="value additional-info-font text-fade" id="humidity">55%</span>
+                    <span class="title additional-info-font text-fade">Humidity</span>
+                </div>
+                <div class="precipitation stats-card">
+                    <span class="icon additional-info-font text-fade">🌧️</span>
+                    <span class="value additional-info-font text-fade" id="precipitation">67mm</span>
+                    <span class="title additional-info-font text-fade">Precipitation</span>
+                </div>
+                <div class="wind-speed stats-card">
+                    <span class="icon additional-info-font text-fade">💨</span>
+                    <span class="value wind-value additional-info-font text-fade" id="wind-speed">6km/h</span>
+                    <span class="title additional-info-font text-fade">Wind speed</span>
+                </div>
+                <div class="snow stats-card">
+                    <span class="icon additional-info-font text-fade">❄️</span>
+                    <span class="value snow-value additional-info-font text-fade" id="snow">0mm</span>
+                    <span class="title additional-info-font text-fade">Snow level</span>
+                </div>
+            </div>
+            <div class="date-time">
+                <span class="date-font text-fade" id="date">
+                    Monday
+                </span>
+
+            </div>
+        </div>
+        <div class="toggle-button">
+            <label for="toggle" class="toggle-background" id="toggle-background">
+                <span class="switch-label switch-label-c">
+                    C
+                </span>
+                <input type="checkbox" name="toggle" id="toggle" class="toggle-input">
+                <div class="toggle-switch"></div>
+                <span class="switch-label switch-label-f">
+                    F
+                </span>
+            </label>
+        </div>
+    </main>
+    <footer></footer>
+    <!-- <script src="../javascript/index.js"></script> -->
+</body>
+</html>
